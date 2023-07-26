@@ -40,6 +40,9 @@ include "framework-docs"
 include "framework-platform"
 include "integration-tests"
 
+// 自定义的模块 ，非官方
+include 'spring-good'
+
 rootProject.name = "spring"
 rootProject.children.each {project ->
 	project.buildFileName = "${project.name}.gradle"
@@ -59,3 +62,5 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
+
+
